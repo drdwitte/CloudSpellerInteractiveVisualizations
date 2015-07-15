@@ -12,6 +12,6 @@ Screenshots:
 
 ![Global FDR](/MotifVisualizations_ALL/AFABGlobal.gif?raw=true "Slopechart to compare Global FDR for AF and AB discovery algorithm")
 
-![Barplot FDR](/MotifVisualizations_ALL/AFABHistorgrams.gif?raw=true "Interactive barchart to allow deep exploration of FDR based on CFT en k and s")
+![Barplot FDR](/MotifVisualizations_ALL/AFABHistograms.gif?raw=true "Interactive barchart to allow deep exploration of FDR based on CFT en k and s")
 
 
