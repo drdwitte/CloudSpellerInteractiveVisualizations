@@ -1,0 +1,30 @@
+Pipeline consists of:
+
+be.iminds.cloudspeller.postprocessing_Single.DBMotifCountsTable 
+to generate counts for C,F,T,K,S combinations with
+
+C=0.5,0.6,0.7,0.8,0.9,0.95
+T=15,70,95
+F=1,5,10,15,20,50
+
+k=6-12
+s=1,2,4,8,16,32,64
+
+FDRTablesCFTKS_latestJuly2015
+
+Example record: 10_16_15_60_5	19336146
+k_s_T_C_F
+
+transform this with:
+
+be.iminds.cloudspeller.postprocessing_Single.ReworkMotifCountsTable
+
+to csv format which can be processed by the visualization engine.
+
+manually add csv header:
+
+name,C,F,T,k6s1,k6s2,k6s4,k6s8,k6s16,k6s32,k6s64,k7s1,k7s2,k7s4,k7s8,k7s16,k7s32,k7s64,k8s1,k8s2,k8s4,k8s8,k8s16,k8s32,k8s64,k9s1,k9s2,k9s4,k9s8,k9s16,k9s32,k9s64,k10s1,k10s2,k10s4,k10s8,k10s16,k10s32,k10s64,k11s1,k11s2,k11s4,k11s8,k11s16,k11s32,k11s64,k12s1,k12s2,k12s4,k12s8,k12s16,k12s32,k12s64
+
+
+Complication with first version:
+Add a choice for background model: Markov0, 1 of 2nd order 

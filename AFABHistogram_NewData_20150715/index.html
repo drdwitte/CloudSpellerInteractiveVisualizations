@@ -29,27 +29,40 @@
 		<table>
 
 			<tr>
-			<td><input class="C" type="radio" name="chooseC" value="50" >         C<sub>thres</sub> >= 0.5 </td>
-			<td><input class="C" type="radio" name="chooseC" value="70" >         C<sub>thres</sub> >= 0.7 </td>
-			<td><input class="C" type="radio" name="chooseC" value="90" checked> C<sub>thres</sub> >= 0.9 </td>	
+			<td><input class="C" type="radio" name="chooseC" value="50" >         	C<sub>thres</sub> >= 0.5 </td>
+			<td><input class="C" type="radio" name="chooseC" value="60" >         	C<sub>thres</sub> >= 0.6 </td>
+			<td><input class="C" type="radio" name="chooseC" value="70" > 		C<sub>thres</sub> >= 0.7 </td>	
+			<td><input class="C" type="radio" name="chooseC" value="80" > 		C<sub>thres</sub> >= 0.8 </td>	
+			<td><input class="C" type="radio" name="chooseC" value="90" checked> 	C<sub>thres</sub> >= 0.9 </td>	
+			<td><input class="C" type="radio" name="chooseC" value="95" > 		C<sub>thres</sub> >= 0.95 </td>	
 			<td></td>		
 			<td></td>			
 			<td></td>				
 			</tr>
 			
 			<tr>
-			<td><input class="F" type="radio" name="chooseF" value="1">          F<sub>thres</sub> >= 1  </td>
-			<td><input class="F" type="radio" name="chooseF" value="5">          F<sub>thres</sub> >= 5   </td>
-			<td><input class="F" type="radio" name="chooseF" value="10" checked> F<sub>thres</sub> >= 10  </td>	
-			<td><input class="F" type="radio" name="chooseF" value="15">         F<sub>thres</sub> >= 15  </td>	
-			<td><input class="F" type="radio" name="chooseF" value="20">         F<sub>thres</sub> >= 20  </td>
-			<td><input class="F" type="radio" name="chooseF" value="500">        F<sub>thres</sub> >= 500 </td>	
+			<td><input class="F" type="radio" name="chooseF" value="1">          	F<sub>thres</sub> >= 1  </td>
+			<td><input class="F" type="radio" name="chooseF" value="5">     	F<sub>thres</sub> >= 5   </td>
+			<td><input class="F" type="radio" name="chooseF" value="10"> 		F<sub>thres</sub> >= 10  </td>	
+			<td><input class="F" type="radio" name="chooseF" value="15">         	F<sub>thres</sub> >= 15  </td>	
+			<td><input class="F" type="radio" name="chooseF" value="20" checked>   	F<sub>thres</sub> >= 20  </td>
+			<td><input class="F" type="radio" name="chooseF" value="50">        	F<sub>thres</sub> >= 50 </td>	
+			<td><input class="F" type="radio" name="chooseF" value="500">        	F<sub>thres</sub> >= 500 </td>	
 			</tr>
 
 			<tr>
 			<td><input class="T" type="radio" name="chooseT" value="15" checked> BLS >= 15% </td>
 			<td><input class="T" type="radio" name="chooseT" value="70">         BLS >= 70% </td>
 			<td><input class="T" type="radio" name="chooseT" value="95">         BLS >= 95% only </td>	
+			<td></td>		
+			<td></td>			
+			<td></td>			
+			</tr>
+
+			<tr>
+			<td><input class="T" type="radio" name="chooseM" value="1" checked> Markov Order 0 </td>
+			<td><input class="T" type="radio" name="chooseM" value="2">         Markov Order 1 </td>
+			<td><input class="T" type="radio" name="chooseM" value="3">         Markov Order 2 </td>	
 			<td></td>		
 			<td></td>			
 			<td></td>			
@@ -78,10 +91,10 @@
 
 			<tr>
 			<td> Motif Length </td>
-			<td> <input class="k" type="checkbox" name="chooseK" value="6"  checked> k=6  </td>
-			<td> <input class="k" type="checkbox" name="chooseK" value="7"  checked> k=7  </td>
-			<td> <input class="k" type="checkbox" name="chooseK" value="8"  checked> k=8  </td>	
-			<td> <input class="k" type="checkbox" name="chooseK" value="9"  checked> k=9  </td>	
+			<td> <input class="k" type="checkbox" name="chooseK" value="6"   > k=6  </td>
+			<td> <input class="k" type="checkbox" name="chooseK" value="7"   > k=7  </td>
+			<td> <input class="k" type="checkbox" name="chooseK" value="8"   > k=8  </td>	
+			<td> <input class="k" type="checkbox" name="chooseK" value="9"   > k=9  </td>	
 			<td> <input class="k" type="checkbox" name="chooseK" value="10"  checked> k=10 </td>	
 			<td> <input class="k" type="checkbox" name="chooseK" value="11"  checked> k=11 </td>
 			<td> <input class="k" type="checkbox" name="chooseK" value="12"  checked> k=12 </td>								
@@ -92,12 +105,12 @@
 
 			<tr>	
 			<td> Motif Degeneracy </td>	
-			<td> <input class="s" type="checkbox" name="chooseS" value="1"  checked> s=1  </td>
+			<td> <input class="s" type="checkbox" name="chooseS" value="1"         > s=1  </td>
 			<td> <input class="s" type="checkbox" name="chooseS" value="2"         > s=2  </td>	
-			<td> <input class="s" type="checkbox" name="chooseS" value="4"  checked> s=4  </td>	
+			<td> <input class="s" type="checkbox" name="chooseS" value="4"         > s=4  </td>	
 			<td> <input class="s" type="checkbox" name="chooseS" value="8"         > s=8  </td>	
 			<td> <input class="s" type="checkbox" name="chooseS" value="16" checked> s=16 </td>
-			<td> <input class="s" type="checkbox" name="chooseS" value="32"        > s=32 </td>	
+			<td> <input class="s" type="checkbox" name="chooseS" value="32" checked> s=32 </td>	
 			<td> <input class="s" type="checkbox" name="chooseS" value="64" checked> s=64 </td>
 			<td><button type="button" onclick="checkAll('chooseS')">Select All </button></td>
 			<td><button type="button" onclick="uncheckAll('chooseS')">Deselect All </button></td>
@@ -111,8 +124,8 @@
 	
 
 
-	var Cthr = [50,70,90];
-	var Fthr = [1,5,10,15,20,500];
+	var Cthr = [50,60,70,80,90,95];
+	var Fthr = [1,5,10,15,20,,50,500];
 	var Tthr = [15,70,95];
 	var Kthr = [6,7,8,9,10,11,12];
 	var Sthr = [1,2,4,8,16,32,64];	 
@@ -124,9 +137,9 @@
 	var w = 1600;
 	var margin = {left:60, top:60, right:60, bottom:60};
 
-	processDataset(getButtonValue("chooseC"),getButtonValue("chooseF"),getButtonValue("chooseT"),getButtonValue("chooseAlg"));
+	processDataset(getButtonValue("chooseC"),getButtonValue("chooseF"),getButtonValue("chooseT"),getButtonValue("chooseAlg"), getButtonValue("chooseM"));
 
-	function processDataset(Ct, Ft, Tt,alg){
+	function processDataset(Ct, Ft, Tt,alg,m){
 
 		//opm de AF en AB keuzebuttons hoeven geen simulatie te triggeren enkel een aanpassing van de datapunten: bars centraliseren en 1 bar onzichtbaar maken
 		//kan met een simpele selectAll
@@ -183,8 +196,8 @@
 	
 		d3.csv("AFRealReworked.csv", function(data1){ 
 			d3.csv("ABRealReworked.csv", function(data2){
-				d3.csv("AFRandomReworked.csv", function(data3){
-					d3.csv("ABRandomReworked.csv", function(data4){
+				d3.csv("AFMarkov" + m + "Reworked.csv", function(data3){
+					d3.csv("ABMarkov" + m + "Reworked.csv", function(data4){
 					
 						var datapoints;
 						if (!Ksum && !Ssum){ 
@@ -205,7 +218,7 @@
 
 						}
 
-						generateAxes(svg, xScale, yScale, Ct, Ft, Tt);
+						generateAxes(svg, xScale, yScale, Ct, Ft, Tt, m-1);
 						generateLegend(svg);							
 						drawPairedHistogram(datapoints, svg, xScale, yScale, Ct, Ft, Tt, alg);
 						
@@ -402,12 +415,14 @@
 			var Td = parseInt(spl[3]);			
 			var Cd = parseInt(spl[1]);	
 
+
 			if (Fd==F && Td==T && Cd==C){
 
-				sumAFreal = 0;
-				sumAFrandm= 0;					
-				sumABreal = 0;
-				sumABrandm= 0;				
+				console.log(Fd+" "+Td+" "+Cd+" ")
+				sumAFreal = 0.0;
+				sumAFrandm= 0.0;					
+				sumABreal = 0.0;
+				sumABrandm= 0.0;				
 				
 				for (k=0; k<Ks.length; k++){
 					for(s=0; s<Ss.length; s++){
@@ -415,10 +430,10 @@
 					
 						var lblInputData = "k"+Ks[k]+"s"+Ss[s];
 	
-						sumAFreal  += parseInt(datasetAFReal[i][lblInputData]);
-						sumAFrandm += parseInt(datasetAFRandom[i][lblInputData]);					
-						sumABreal  += parseInt(datasetABReal[i][lblInputData]);
-						sumABrandm += parseInt(datasetABRandom[i][lblInputData]);	
+						sumAFreal  += Number(datasetAFReal[i][lblInputData]);
+						sumAFrandm += Number(datasetAFRandom[i][lblInputData]);					
+						sumABreal  += Number(datasetABReal[i][lblInputData]);
+						sumABrandm += Number(datasetABRandom[i][lblInputData]);	
 						
 						
 					}
@@ -441,6 +456,8 @@
 				
 					
 		}
+
+		console.log(dataptn);
 
 		return dataptn;
 	}
@@ -487,6 +504,7 @@
 				
 					var currentBar = d3.select(this);
 					currentBar.transition()
+						.duration(200)
 						.style("fill","blue");
 									
 	
@@ -504,7 +522,6 @@
 
 					//FDR of bar				
 					var fdrCalc = 100*fdr(d.AFreal,d.AFrandm)+"";
-					//if (fdrCalc>100){ fdrCalc = 100.0;}				
 					var fdrStr  = "FDR= "+fdrCalc.substr(0,fdrCalc.indexOf('.')+3)+" %";
 
 					//label
@@ -541,6 +558,7 @@
 				
 					var currentBar = d3.select(this);
 					currentBar.transition()
+						.duration(500)
 						.style("fill" , getColor(d.AFreal,d.AFrandm));
 				})
 				;
@@ -560,6 +578,7 @@
 					//highlight bar
 					var currentBar = d3.select(this);
 					currentBar.transition()
+						.duration(200)
 						.style("fill","blue");
 				
 					//line to Y-axis
@@ -613,6 +632,7 @@
 				
 					var currentBar = d3.select(this);
 					currentBar.transition()
+						.duration(500)
 						.style("fill" , getColor(d.ABreal,d.ABrandm));	
 				})
 				;
@@ -620,7 +640,7 @@
 
 	}
 	
-	function generateAxes(svg, xScale, yScale, Ct, Ft, Tt){ 
+	function generateAxes(svg, xScale, yScale, Ct, Ft, Tt, m){ 
 	//NOTE Y-axis must only be moved horizontally, scaling takes care of right position!
 
 		//drawing the X and Y-axis + add a caption
@@ -662,7 +682,7 @@
 		var labelX = svg.append("text");
 		var labelY = svg.append("text");
 		labelX.text("Motif Type (k = length, s = degeneracy)");
-		labelY.text("Number of motifs in real dataset C >= 0."+Ct+", F >= "+Ft+", BLS >= "+Tt+"%");
+		labelY.text("Number of motifs in real dataset C >= 0."+Ct+", F >= "+Ft+", BLS >= "+Tt+"%, Background model Markov "+m);
 
 		labelX.attr("transform","translate("
 						+(w-7*margin.right)
@@ -691,11 +711,11 @@
 	function generateLegend(svg){
 		
 		var legend_desc = [
-				"10%  <= FDR       ", 
-				"5%   <= FDR <  10%",
+				"25%  <= FDR       ", 
+				"10%  <= FDR <   25%",
+				"5%   <= FDR <   10%",
 				"1%   <= FDR <   5%",
-				"0.1% <= FDR <   1%",
-				"        FDR < 0.1%" 
+				"        FDR <   1%" 
 				];
 
 		
@@ -743,13 +763,13 @@
 	}
 	function getColor(real, randm){
 		var f = randm/real;
-		if (f>=0.1)
+		if (f>=0.25)
 			return "rgb(255, 0, 0)";
-		else if (f>=0.05)
+		else if (f>=0.1)
 			return "rgb(255, 165, 0)";
-		else if (f>=0.01)
+		else if (f>=0.05)
 			return "rgb(255, 255, 0)";
-		else if (f>=0.001)
+		else if (f>=0.01)
 			return "rgb(124, 252, 0)";
 		else
 			return "rgb(0, 128, 0)";		
@@ -785,113 +805,27 @@
 		
 	}
 
+	function initiateAlgorithm(){
+		var C = getButtonValue("chooseC");
+		var F = getButtonValue("chooseF");
+		var T = getButtonValue("chooseT");
+		var M = getButtonValue("chooseM");
+		var alg = getButtonValue("chooseAlg");
+		processDataset(C,F,T,alg,M);
+
+	}
+
 	function bindListeners(){
 	
-		d3.selectAll("input.C")
-				.on("click", function(){
+		//var C = d3.select(this).attr("value");
 
-					var C = d3.select(this).attr("value");
-					var F = getButtonValue("chooseF");
-					var T = getButtonValue("chooseT");
-					var alg = getButtonValue("chooseAlg");
-					processDataset(C,F,T,alg);
-			
-				});
-
-		d3.selectAll("input.T")
-				.on("click", function(){
-
-					var C = getButtonValue("chooseC");
-					var F = getButtonValue("chooseF");
-					var T = d3.select(this).attr("value");
-					var alg = getButtonValue("chooseAlg");
-					processDataset(C,F,T,alg);
-		
-				});
-			
-		d3.selectAll("input.F")
-				.on("click", function(){
-
-					var C = getButtonValue("chooseC");
-					var F = d3.select(this).attr("value");
-					var T = getButtonValue("chooseT");
-					var alg = getButtonValue("chooseAlg");
-					processDataset(C,F,T,alg);
-				
-				});
-
-		d3.selectAll("input.k")
-				.on("click", function(){
-
-					var C = getButtonValue("chooseC");
-					var F = getButtonValue("chooseF");
-					var T = getButtonValue("chooseT");
-					var alg = getButtonValue("chooseAlg");
-					processDataset(C,F,T,alg);
-				
-				});
-
-		d3.selectAll("input.s")
-				.on("click", function(){
-
-					var C = getButtonValue("chooseC");
-					var F = getButtonValue("chooseF");
-					var T = getButtonValue("chooseT");
-					var alg = getButtonValue("chooseAlg");
-					processDataset(C,F,T,alg);
-				
-				});
-
-		d3.selectAll("input.alg")
-			.on("click", function(){
-
-					var C = getButtonValue("chooseC");
-					var F = getButtonValue("chooseF");
-					var T = getButtonValue("chooseT");
-					var alg = getButtonValue("chooseAlg");
-					processDataset(C,F,T,alg);
-
-
-
-					/*var type = getButtonValue("chooseAlg");
-					
-					if (type == "AFAB"){
-					
-						d3.selectAll(".AFBars")
-							.style("fill-opacity","1")						
-							.style("pointer-events","all");
-
-
-						d3.selectAll(".ABBars")
-							.style("fill-opacity","1")						
-							.style("pointer-events","all");	
-
-					} else if (type == "AF"){
-					
-						d3.selectAll(".AFBars")
-							.style("fill-opacity","1")						
-							.style("pointer-events","all");	
-
-						d3.selectAll(".ABBars")
-							.style("fill-opacity","0")						
-							.style("pointer-events","none");	
-					
-					} else if (type == "AB"){
-
-						d3.selectAll(".AFBars")
-							.style("fill-opacity","0")						
-							.style("pointer-events","none");	
-
-						d3.selectAll(".ABBars")
-							.style("fill-opacity","1")						
-							.style("pointer-events","all");	
-					}*/
-
-
-
-
-				
-				});
+		d3.selectAll("input.C")		.on("click", initiateAlgorithm); 
+		d3.selectAll("input.T")		.on("click", initiateAlgorithm); 
+		d3.selectAll("input.M")		.on("click", initiateAlgorithm); 
+		d3.selectAll("input.F")		.on("click", initiateAlgorithm); 
+		d3.selectAll("input.k")		.on("click", initiateAlgorithm); 
+		d3.selectAll("input.s")		.on("click", initiateAlgorithm); 
+		d3.selectAll("input.alg")	.on("click", initiateAlgorithm); 
 		
 
 
@@ -903,11 +837,7 @@
 			boxes[i].checked = true;		
 		}
 
-		var C = getButtonValue("chooseC");
-		var F = getButtonValue("chooseF");
-		var T = getButtonValue("chooseT");
-		var alg = getButtonValue("chooseAlg");
-		processDataset(C,F,T,alg);
+		initiateAlgorithm();
 	}
 		
 	function uncheckAll(name){
@@ -916,11 +846,7 @@
 			boxes[i].checked = false;		
 		}
 
-		var C = getButtonValue("chooseC");
-		var F = getButtonValue("chooseF");
-		var T = getButtonValue("chooseT");
-		var alg = getButtonValue("chooseAlg");
-		processDataset(C,F,T,alg);
+		initiateAlgorithm();
 	}
 
 
