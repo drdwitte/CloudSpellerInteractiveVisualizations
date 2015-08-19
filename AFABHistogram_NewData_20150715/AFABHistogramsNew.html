@@ -4,7 +4,7 @@
 <script type="text/javascript" src="d3/d3.min.js"></script>
 <style>
 	.axis text {
-	 font: 10px Arial;
+	 font: 18px Arial;
 	}
 
 	.axis path,
@@ -680,12 +680,16 @@
 		//adding captions
 		
 		var labelX = svg.append("text");
+					
 		var labelY = svg.append("text");
-		labelX.text("Motif Type (k = length, s = degeneracy)");
-		labelY.text("Number of motifs in real dataset C >= 0."+Ct+", F >= "+Ft+", BLS >= "+Tt+"%, Background model Markov "+m);
+				
+		labelX.text("Motif Type (k = length, s = degeneracy)")
+			.style("font-size","22px");
+		labelY.text("Number of motifs in real dataset C >= 0."+Ct+", F >= "+Ft+", BLS >= "+Tt+"%, Background model Markov "+m)
+			.style("font-size","22px");
 
 		labelX.attr("transform","translate("
-						+(w-7*margin.right)
+						+(w-8*margin.right)
 						+","
 						+(h-0.3*margin.bottom)
 						+")"
@@ -734,15 +738,15 @@
 			svg.append("text")
 				.text(legend_desc[i])
 				.attr("x",2*margin.left + legendWidth +5)
-				.attr("y",margin.top+i*(legendWidth+3))
+				.attr("y",margin.top+i*(legendWidth+4))
 				.attr("font-family", "sans-serif")
-				.attr("font-size", "11px")
+				.attr("font-size", "18px")
 				.attr("fill", "black")
 				;
 
 			svg.append("rect")
 				.attr("x",2*margin.left)
-				.attr("y",margin.top+i*(legendHeight+3)-legendHeight/1.5)
+				.attr("y",margin.top+i*(legendHeight+4)-legendHeight/1.5)
 				.attr("width" , legendWidth)
 				.attr("height", legendHeight)
 				.attr("fill",colors[i])
